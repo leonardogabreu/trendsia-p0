@@ -1,0 +1,4 @@
+Sou bibliotecário, e gostaria de uma funcionalidade "Registrar Empréstimo".
+Nela, o sistema deve consultar o número de volumes não reservados no estoque, e, caso haja cópias disponíveis, fazer o empréstimo.
+Cada cliente deve registrar seus dados pessoais (CPF, nome completo, email, endereço) antes de realizar o empréstimo.
+Cada empréstimo deve ser armazenado no banco de dados da biblioteca.
