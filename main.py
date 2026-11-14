@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
+import sys
+
 from llm_client import gerar_texto
 
-print("Escreva uma User Story (Título + Descrição): \n")
+print("Digite a User Story. Para terminar, aperte Ctrl+D numa linha vazia:\n")
 
-user_story = input()
+user_story = sys.stdin.read().strip()
 
-cards = gerar_texto(user_story)
-print(cards)
+if user_story == "":
+    print("Erro: nenhuma User Story foi informada.")
+    sys.exit(1)
+
+print(gerar_texto(user_story))
