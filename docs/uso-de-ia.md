@@ -1,6 +1,6 @@
 # Uso de IA no projeto
 
-Este documento registra como usei ferramentas de IA durante o P0, como pede o enunciado.
+Este documento registra como usei ferramentas de IA durante o P0.
 
 ## Como a IA foi usada
 
@@ -25,3 +25,6 @@ Este documento registra como usei ferramentas de IA durante o P0, como pede o en
 | 14/11/2026 | Claude Code | Entender o erro `502 Bad Gateway` no segundo teste. | A IA explicou que o LLM leva 1–2 minutos para ligar depois que o container inicia, e meu programa chamava antes disso. Coloquei uma espera no `CMD` do Dockerfile para testar. |
 | 14/11/2026 | Claude Code | Entender o erro `504 Gateway Timeout` no terceiro teste. | A IA mostrou, pelos horários dos Logs, que o proxy desiste depois de ~30 s, e explicou o modo *streaming* do Ollama (resposta em pedaços, um JSON por linha). Mudei a chamada para usar streaming. |
 | 14/11/2026 | Claude Code | Confirmar o resultado do quarto teste. | Funcionou: o LLM gerou 4 cards no formato pedido para a User Story da biblioteca. A IA conferiu a saída e listou os próximos passos. |
+| 14/11/2026 | Claude Code | Entender o fluxo completo: Docker (imagem, container, rede), o portal da plataforma, HTTP/HTTPS e o servidor Ollama. | A IA explicou com um diagrama e relacionou cada erro que vi (SSL, 502, 504) à etapa do fluxo em que ele aconteceu. |
+| 15/11/2026 | Claude Code | Entender o que é uma tag/release do Git e planejar o nível intermediário a partir do enunciado. | A IA explicou a diferença entre tag, branch e release e propôs uma divisão do código por responsabilidade e uma ordem de passos com commits pequenos. Criei a tag do nível básico e comecei o intermediário. |
+| 15/11/2026 | Claude Code | Entender qual é o papel do `main.py` e começar o passo 1 do intermediário (exceções e configuração). | A IA explicou que o `main.py` só coordena e transforma as exceções em mensagens, e mostrou o código do `erros.py` e do `config.py`, que digitei e testei. |
