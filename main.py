@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
-from llm_client import gerar_texto
+from gerador_cards.llm_client import gerar_texto
 
 print("Digite a User Story. Para terminar, aperte Ctrl+D numa linha vazia:\n")
 

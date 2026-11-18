@@ -1,7 +1,7 @@
 import os
 from dataclasses import dataclass, field
 
-from erros import ConfiguracaoInvalida
+from gerador_cards.erros import ConfiguracaoInvalida
 
 
 @dataclass
